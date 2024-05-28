@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Consulta de CEP</h1>
+        <div class="input-group">
+            <label for="cep">Digite o CEP:</label>
+            <input type="text" id="cep" placeholder="digite seu cep">
+            <button onclick="consultaCep()">Consultar</button>
+        </div>
+        <div class="result">
+            <h2>Dados do Endereço</h2>
+            <div id="dados-endereco">
+                <!-- Os dados do endereço aparecerão aqui -->
+            </div>
+        </div>
+        <button id="salvar" onclick="salvarEndereco()">Salvar Endereço</button>
+        <button id="excluir" onclick="excluirEndereco()">Excluir Endereço</button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>    
+    <script src="app.js"></script>    
+</body>
+</html>
+
